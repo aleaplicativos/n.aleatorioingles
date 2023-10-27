@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>aleaplicativos n.aleatorio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div> 
+    <div id="generator">
+      <div id="title">Random number generator</div>
+      <p id="rNum">{{ number }}</p>
+      <div id="inputContainer">
+        <div id="headers"> 
+          <p>Min</p>
+          <p>Max</p>
+        </div>
+        <div id="inputs">
+          <input id="min" v-model="min" min="-9999999999" max="9999999999" type="number"/>
+          <input id="max" v-model="max" min="-9999999999" max="9999999999" type="number"/>
+          <input id="generate" type="submit" value="generate number" v-on:click="getInput()"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
